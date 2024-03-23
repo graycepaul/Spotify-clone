@@ -1,13 +1,134 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: "Helvetica Neue" -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #000000; */
+  color: #b3b3b3;
+  font-size: 16px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+:root {
+  --spotify-block-padding: 200px;
+}
+
+.btns,
+.fill,
+.btn-secondary,
+.btn-invert a {
+  background-color: black;
+  color: #ffff;
+  padding: 16px 35px;
+  border-radius: 500px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Helvetica";
+  text-transform: uppercase;
+}
+
+.btns,
+ .fill,
+.btn-green,
+.btn-blue,
+.btn-grey,
+.btn-black {
+  color: #ffff;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Helvitica";
+  text-transform: uppercase;
+  background-color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn-blue, .btn-grey, .btn-black {
+  height: 48px;
+  padding: 12 93.640625 12 93.640625;
+  letter-spacing: 1.4px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-blue {
+  background-color: #1877F2;
+}
+.btn-grey {
+  background-color: transparent;
+  color: #6A6A6A;
+  border: 1px solid #878787;
+}
+.content a .button {
+  width: 100%;
+  padding: 14px 15px;
+  display: block;
+  text-decoration: none;
+  background-color: #000000;
+}
+
+
+
+
+a.fill {
+  width: 100%; 
+  text-decoration: none;
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.btn-green {
+  width: 122px;
+  height: 48px; 
+  background-color: #1ED760;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1.45px;  
+  font-family: sans-serif;
+}
+
+@media (max-width: 500px) {
+  .fill,
+  .btns {
+    padding: 10px 20px;
+    text-wrap: nowrap;
+  }
+}
+
+.btn-invert {
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.btn-outline.btn-invert {
+  background-color: inherit;
+  color: #0000;
+  border: 1px solid #000;
 }
