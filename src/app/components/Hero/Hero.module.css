@@ -1,7 +1,7 @@
 
 .heroSection {
-  height: 70vh;
-  width: 100vw;
+  height: 80vh;
+  width: 99vw;
   line-height: 60px;
   display: flex;
   flex-direction: column;
@@ -31,9 +31,6 @@
 .terms a {
   color: #ffff;
 }
-
-/* Buttons */
-
 
 @media screen and (max-width: 769px) {  
 .heroSection {

@@ -13,7 +13,7 @@
 }
 .header {
   height: 60px;
-  width: 100vw;
+  width: 99vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -48,20 +48,17 @@
 @media screen and (max-width: 969px) {  
 .header {
     justify-content: space-between;
-    position: relative;
     padding: 0 50px;
 }
 .menu ul {
   display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   background-color: var(--primary-color);
   position: absolute;
   border-radius: 10px;
   border: 2px solid var(--blue);
   width: 120px;
-  right: 20px;
+  right: 10px;
   top: 50px;
   height: 200px;
 }

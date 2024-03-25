@@ -1,4 +1,4 @@
-import style from  './HeroBtn.module.css'
+import style from  './Hero.module.css'
 import { Button } from '../button/HeroSectionBtn'
 
 

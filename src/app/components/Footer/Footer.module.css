@@ -1,5 +1,5 @@
 footer {
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
     padding: 25px 0;
     background-color: black;
@@ -7,8 +7,6 @@ footer {
     font-family: Helvetica;
 }
 .content{
-    width: 80%;
-    height: 90%;
     margin: 50px auto;
 }
 .about {
@@ -18,14 +16,9 @@ footer {
 }
 .info {
     display: flex;
-    justify-content: space-evenly;
-    width: 585px;
-    height: 346px;
-    padding: 20px;
+    padding: 20px 0 20px 40px;
 }
 .container {
-    width: 33%;
-    height: 100%;
     margin: 10px;
     padding: 5px;
     list-style: none;
@@ -44,7 +37,7 @@ footer {
 .footNote {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px 120px;
     color: #919496;
     font-size: 12px;
 }
@@ -71,5 +64,9 @@ footer {
     }
     .info {
         padding-top: 70px;
+    }
+    .footNote div p{
+        margin-bottom: -35px;
+        width: max-content;
     }
 }

@@ -2,7 +2,6 @@
   background-color: hsl(0, 0%, 94%);
   padding: 5%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -10,31 +9,34 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+}
+.title,
+.description {
+  color: #000000;
+  font-size: 38px;
+}
+.description {
+  font-size: 16px;
+  padding: 14px 0;
 }
 .card,
 .discount {
   background-color: #ffffff;
   width: 269px;
-  max-width: 269px;
   box-shadow: 0px 0px 15px #ccc;
   border-radius: 10px;
   color: #000000;
   font-size: 16px;
 }
-
-.card span.free {
+.free {
   background-color: #0d72ea;
-  display: inline-block;
-  padding: 5px 0px;
-  height: 26px;
+  padding: 7px 0;
   width: max-content;
   border-radius: 4px;
   font-size: 13px;
   font-weight: bold;
   color: #fff;
 }
-
 .card span.onetime {
   background-color: #ffffff;
   color: #0d72ea;
@@ -44,84 +46,52 @@
   border: 1px solid #0d72ea;
   font-size: 13px;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .plan button {
   font-family: Helvetica;
   border: 1px solid #000;
   font-size: 13px;
   font-weight: 700;  
-
 }
 .header {
   border-bottom: 2px solid #ccc;
   padding: 20px;
-  width: 269px;
   height: 167px;
   border-radius: 10px 10px 0 0;
 }
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 269px;
   height: 254px;
   padding: 8px 16px 24px 16px;
   box-shadow: -8px 10px 12px #ddd;
 }
-
 .content ul {
   margin: 0;
   padding: 0 23px;
   list-style-image: url(../../assets/images/icons/check-mark.svg);
-
 }
-
 .content ul li {
   position: relative;
   width: 220px;
   margin-bottom: 15px;
-
 }
-
 .content ul li p {
   margin: 3px 0 0 10px;
-  position: absolute;
-}
-.plan {
-  margin-top: 20px;
 }
 .footer {
   color: #535353;
   font-size: 12px;
-  width: 269px;
-  height: 80px;
-  padding: 16px;   
+  padding: 17px;   
   border-radius: 0 0 10px 10px;
 }
 .footer a {
   color: #535353;
-  font-size: 12px;
-}
-.title,
-.description {
-  color: #000000;
-  font-size: 38px;
-  text-align: center;
-  margin: 0;
-}
-.description {
-  font-size: 16px;
-  padding: 14px 0;
 }
 .discount {
   width: 55%;
   height: 82px;
   display: flex;
-  max-width: none;
   padding: 4px 5px;
-  color: black;
-  justify-content: center;
   align-items: center;
   font-size: 23px;
   font-weight: bold;
@@ -138,26 +108,23 @@
   font-weight: 700;
 }
 
-
-
 @media (max-width: 800px) {
   .discount {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100px;
+  }
+  .flex {
+    margin-left: 30px;
   }
   .discount p {
     font-size: 10px;
-    width: 250px;
     margin: 0;
   }
   .discount button {
-    width: 178.56px;
     height: 32px;
     padding: 7px;
     font-size: 10px;
-
   }
   
 }

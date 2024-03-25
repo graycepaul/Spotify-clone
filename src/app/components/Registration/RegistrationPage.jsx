@@ -1,4 +1,3 @@
-// import SpotifyWhite from '../../../assets/images/spotify-black.svg'
 import LogoBlack from '../../assets/images/logo-black.png';
 import { SignIn } from './Login';
 import style from './Registration-page.module.css'

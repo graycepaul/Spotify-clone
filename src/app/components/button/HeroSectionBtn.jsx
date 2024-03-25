@@ -1,6 +1,5 @@
 import { combineClasses } from '../../../utils/format'
 
-// import style from '../Hero/Herobtn.module.css'
 export const Button = (props) =>{
     const classNames = {
         primary : 'btns',

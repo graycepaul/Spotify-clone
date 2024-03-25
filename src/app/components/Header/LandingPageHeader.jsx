@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './LandingPageHeader.css'
 import {Logo} from './Logo'
 
@@ -15,7 +16,6 @@ export const LandingPageHeader = () => {
     )
 }
 
-
  export const HeaderNavigation = ()=>{
    return(
     <div  className='dropdown'>
@@ -26,12 +26,12 @@ export const LandingPageHeader = () => {
         </div>
         <div className="menu">
         <ul>
-            <li><a href ="#Premium">Premium</a></li> 
-            <li><a href ="#Premium">Support</a></li>
-            <li><a href ="#Premium">Download</a></li>
+            <li><Link to="/premium" >Premium</Link></li> 
+            <li><Link to="/hero">Support</Link></li>
+            <li><Link to="/download">Download</Link></li>
             <li>|</li>
-            <li><a href ="#Premium">Sign up</a></li>
-            <li><a href ="#Premium">Login</a></li>
+            <li><Link to="/signup">Sign up</Link></li>
+            <li><Link to="/login">Login</Link></li>
         </ul>
         </div> 
     </div>
